@@ -23,10 +23,21 @@
       Découvrez nos services de développement web, UX design, marketing et plus
       encore
     </p>
-    <div class="p-2 border-2 rounded-lg">
-      <i class="fa-solid fa-gear"></i>
+    <div class="p-2 border-2 rounded-lg flex gap-2">
+        <div>
+            <i class="fa-solid fa-gear"></i>
+        </div>
       <label class="" for="">Mode gestion freelance</label>
-      <button type="button" class="sr-only peer"></button>
+      <!--  toggle switch -->
+      <label class="relative inline-flex items-center cursor-pointer ">
+        <input type="checkbox" class="sr-only peer" />
+        <div
+          class="w-12 h-6 bg-gray-300 rounded-full peer peer-checked:bg-indigo-600 transition-all"
+        ></div>
+        <div
+          class="absolute left-1 top-1 w-4 h-4 bg-white rounded-full transition-all peer-checked:translate-x-6"
+        ></div>
+      </label>
     </div>
     <p class="p-3 my-5 border-2 rounded-lg">
       Vous êtes en mode gestion. Vous pouvez ajouter, modifier ou supprimer des
@@ -111,14 +122,14 @@
         <div class="flex justify-between">
           <div class="flex text-center">
             <div class="text-xl text-green-600">
-                <i class="fa-solid fa-dollar-sign"></i>
+              <i class="fa-solid fa-dollar-sign"></i>
             </div>
             <p class="text-green-600 pr-1">500</p>
             <span class="text-green-600 pr-2">USD </span>
             <span class="text-gray-500">/ par jour</span>
           </div>
           <div class="flex text-gray-500">
-            <div class="pr-1 ">
+            <div class="pr-1">
               <i class="fa-regular fa-clock"></i>
             </div>
 
