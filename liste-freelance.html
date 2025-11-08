@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+</head>
+
+<body class="flex flex-col justify-center m-2 bg-blue-100">
+    
+        <section class="flex justify-between m-14 p-8 items-center mt-8 h-20 bg-white rounded-xl">
+            <div class="flex ">
+                <div class="h-13 w-12 flex items-center justify-center border border-red-500 rounded-2xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ">
+                    <i class="fa-solid fa-filter fa-xl " style="color: #ffffff;"></i>
+                </div>
+                <div class="h-15 flex items-center ">
+                    <p>Filtrer par spécialité</p>
+                </div>
+            </div>
+            <div>
+                <select name="" id="" class="h-10 flex justify-items-center rounded-xl bg-gray-200">
+                    <option value="">Touts les specialités</option>
+                    <option value="">Developement Web</option>
+                    <option value="">Designer</option>
+                    <option value="">Redacteur</option>
+                </select>
+            </div>
+        </section>
+        <section class="grid grid-cols-[repeat(auto-fit,_minmax(20rem,_1fr))] justify-center  overflow-hidden gap-8 pl-13 rounded-xl">
+
+           <div class="flex flex-col gap-8 h-90 w-80 bg-slate-50 p-4 rounded-xl items-center">
+
+                <div class="border-red-600 border-2 h-30 shadow-xl bg-cover bg-[url(images/img1.webp)] shadow-orange-600 w-30 rounded-[50%] bg-green-100"></div>
+                <div class="flex flex-col gap-4 items-center">
+                    <h2 class="font-bold  w-auto">Thomas Dubois</h2>
+                    <h2 class="border rounded-xl p-2 bg-orange-200">Développeur Web</h2>
+                    <h3 class="flex items-center"><i class="fa-solid fa-star" style="color: #FFD43B;"></i><p>4.5</p></h3>
+                    <h3 class="font-serif text-lg">65€/heure</h3>
+                </div>
+           </div>
+           <div class="flex flex-col gap-8 h-90 w-80 bg-slate-50 p-4 rounded-xl items-center">
+                <div class="border-red-600 border-2 h-30 shadow-xl bg-cover bg-[url(images/img6.webp)] shadow-blue-500 w-30 rounded-[50%] bg-green-100"></div>
+                <div class="flex flex-col gap-4 items-center">
+                    <h2 class="font-bold  w-auto">Thomas Dubois</h2>
+                    <h2 class="border rounded-xl p-2 bg-blue-200">Designer</h2>
+                    <h3 class="flex items-center"><i class="fa-solid fa-star" style="color: #FFD43B;"></i><p>4.8</p></h3>
+                    <h3 class="font-serif text-lg">75€/heure</h3>
+                </div>
+           </div>
+           <div class="flex flex-col gap-8 h-90 w-80 bg-slate-50 p-4 rounded-xl items-center">
+                <div class="border-red-600 border-2 h-30 shadow-xl bg-cover bg-[url(images/img5.webp)] shadow-fuchsia-600 w-30 rounded-[50%] bg-green-100"></div>
+                <div class="flex flex-col gap-4 items-center">
+                    <h2 class="font-bold  w-auto">Thomas Dubois</h2>
+                    <h2 class="border rounded-xl p-2 bg-fuchsia-200">Rédacteur</h2>
+                    <h3 class="flex items-center"><i class="fa-solid fa-star" style="color: #FFD43B;"></i><p>4</p></h3>
+                    <h3 class="font-serif text-lg">55€/heure</h3>
+                </div>
+           </div>
+           <div class="flex flex-col gap-8 h-90 w-80 bg-slate-50 p-4 rounded-xl items-center">
+                <div class="border-red-600 border-2 h-30 shadow-xl bg-cover bg-[url(images/img4.webp)] shadow-orange-600 w-30 rounded-[50%] bg-green-100"></div>
+                <div class="flex flex-col gap-4 items-center">
+                    <h2 class="font-bold  w-auto">Thomas Dubois</h2>
+                    <h2 class="border rounded-xl p-2 bg-orange-200">Développeur Web</h2>
+                    <h3 class="flex items-center"><i class="fa-solid fa-star" style="color: #FFD43B;"></i><p>4.8</p></h3>
+                    <h3 class="font-serif text-lg">87€/heure</h3>
+                </div>
+           </div>
+           <div class="flex flex-col gap-8 h-90 w-80 bg-slate-50 p-4 rounded-xl items-center">
+                <div class="border-red-600 border-2 h-30 shadow-xl bg-cover bg-[url(images/img3.webp)] shadow-blue-500 w-30 rounded-[50%] bg-green-100"></div>
+                <div class="flex flex-col gap-4 items-center">
+                    <h2 class="font-bold  w-auto">Thomas Dubois</h2>
+                    <h2 class="border rounded-xl p-2 bg-blue-200">Designer</h2>
+                    <h3 class="flex items-center"><i class="fa-solid fa-star" style="color: #FFD43B;"></i><p>4.7</p></h3>
+                    <h3 class="font-serif text-lg">75€/heure</h3>
+                </div>
+           </div>
+           <div class="flex flex-col gap-8 h-90 w-80 bg-slate-50 p-4 rounded-xl items-center">
+                <div class="border-red-600 border-2 h-30 shadow-xl bg-cover bg-[url(images/img2.webp)] shadow-fuchsia-600 w-30 rounded-[50%] bg-green-100"></div>
+                <div class="flex flex-col gap-4 items-center">
+                    <h2 class="font-bold  w-auto">Thomas Dubois</h2>
+                    <h2 class="border rounded-xl p-2 bg-fuchsia-200 red-600">Rédacteur</h2>
+                    <h3 class="flex items-center"><i class="fa-solid fa-star" style="color: #FFD43B;"></i><p>3.8</p></h3>
+                    <h3 class="font-serif text-lg">50€/heure</h3>
+                </div>
+           </div>
+           <div class="flex flex-col gap-8 h-90 w-80 bg-slate-50 p-4 rounded-xl items-center">
+                <div class="border-red-600 border-2 h-30 shadow-xl bg-cover bg-[url(images/img1.webp)] shadow-orange-600 w-30 rounded-[50%] bg-green-100"></div>
+                <div class="flex flex-col gap-4 items-center">
+                    <h2 class="font-bold  w-auto">Thomas Dubois</h2>
+                    <h2 class="border rounded-xl p-2 bg-orange-200">Développeur Web</h2>
+                    <h3 class="flex items-center"><i class="fa-solid fa-star" style="color: #FFD43B;"></i><p>4.4</p></h3>
+                    <h3 class="font-serif text-lg">69€/heure</h3>
+                </div>
+           </div>  
+
+        </section>
+    
+</body>
+
+</html>
