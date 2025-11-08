@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/e53a9172bb.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Ajouter un service</title>
+  </head>
+  <body class="flex justify-center bg-gray-200">
+    <form action="" class="  rounded-2xl p-3 mt-3 bg-white">
+      <div class="flex justify-between pb-2">
+        <h2 class="text-xl ">Ajouter un nouveau service</h2>
+        <div>
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+      <div class="flex flex-col">
+        <label for="">Titre de service:</label>
+        <input type="text" name="" id="" class="bg-gray-200 rounded h-9 mb-2"/>
+      </div>
+      <div class=" flex justify-between mb-2 gap-3">
+        <div class="flex flex-col">
+          <label for="">Categorie:</label>
+          <select name="" id="" class="bg-gray-200 rounded p-1">
+            <option value="">Développement Web</option>
+            <option value="">UX Design</option>
+            <option value="">Marketing</option>
+            <option value="">Autre</option>
+          </select>
+        </div>
+        <div class="flex flex-col w-56">
+          <label for="">Nom du freelance:</label>
+          <input type="text" name="" id="" class="bg-gray-200 rounded p-1"/>
+        </div>
+      </div>
+      <div class="flex flex-col mb-2">
+        <label for="">Description:</label>
+        <textarea name="" id="" class="bg-gray-200 rounded"></textarea>
+      </div>
+      <div class="flex justify-between mb-2 gap-3">
+        <div class="flex flex-col">
+          <label for="">Prix:</label>
+          <input type="number" name="" id="" class="bg-gray-200 rounded p-1 " />
+        </div>
+        <div class="flex flex-col w-56">
+          <label for="">Unité de prix:</label>
+          <select name="" id="" class="bg-gray-200 rounded p-1">
+            <option value="">par heure</option>
+            <option value="">par jour</option>
+            <option value="">par mois</option>
+            <option value="">par projet</option>
+          </select>
+        </div>
+      </div>
+      <div class="flex flex-col mb-2">
+        <label for="">Délai de livraison:</label>
+        <input type="text" placeholder="Ex: 1-2 semaines" class="bg-gray-200 rounded p-2" />
+      </div>
+      <div class="flex flex-col mb-2">
+        <label for="">Compétences/Tags (séparés par des virgules)</label>
+        <input type="text" placeholder="Ex: React, Node.js ..." class=" bg-gray-200 rounded p-2" />
+      </div>
+      <div class="flex justify-between">
+        <div class="border-2 cursor-pointer p-2 rounded-xl w-28 text-center"><button>Annuler</button></div>
+        <div class="cursor-pointer p-2 rounded-xl w-28 text-center bg-blue-600 text-white"><button>Ajouter</button></div>
+      </div>
+    </form>
+  </body>
+</html>
