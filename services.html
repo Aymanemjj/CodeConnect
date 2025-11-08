@@ -4,13 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- <style>
-    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
-    *{
-        font-family: "JetBrains Mono";
-        font-style: normal;
-    }
-    </style>     -->
     <script
       src="https://kit.fontawesome.com/e53a9172bb.js"
       crossorigin="anonymous"
@@ -24,13 +17,13 @@
       encore
     </p>
     <div class="p-2 border-2 rounded-lg flex gap-2">
-        <div>
-            <i class="fa-solid fa-gear"></i>
-        </div>
+      <div>
+        <i class="fa-solid fa-gear"></i>
+      </div>
       <label class="" for="">Mode gestion freelance</label>
       <!--  toggle switch -->
-      <label class="relative inline-flex items-center cursor-pointer ">
-        <input type="checkbox" class="sr-only peer" />
+      <label class="relative inline-flex items-center cursor-pointer" id="cccc">
+        <input type="checkbox" class="sr-only peer" id="toggleSwitch" />
         <div
           class="w-12 h-6 bg-gray-300 rounded-full peer peer-checked:bg-indigo-600 transition-all"
         ></div>
@@ -39,17 +32,18 @@
         ></div>
       </label>
     </div>
-    <p class="p-3 my-5 border-2 rounded-lg">
+    <p id="paragraph" class="p-3 my-5 border-2 rounded-lg">
       Vous êtes en mode gestion. Vous pouvez ajouter, modifier ou supprimer des
       services.
     </p>
     <section class="flex justify-between flex-wrap">
-      <div>
+      <div class="flex gap-28">
+              <div>
         <span class="pr-2">Catégorie:</span>
         <select
           name="trier_Categorie"
           id="trier_Categorie"
-          class="bg-gray-200 rounded-md p-2 cursor-pointer"
+          class="bg-gray-200 rounded-md p-2 cursor-pointer my-3"
         >
           <option>Toutes les catégories</option>
           <option>Développement web</option>
@@ -62,15 +56,18 @@
         <select
           name="trier_Prix"
           id="trier_Prix"
-          class="bg-gray-200 rounded-md p-2 cursor-pointer"
+          class="bg-gray-200 rounded-md p-2 cursor-pointer my-3"
         >
           <option>Par defaut</option>
           <option>Prix croisant</option>
           <option>Prix décroissant</option>
         </select>
       </div>
+      </div>
+
       <div
-        class="content-end p-2 text-white rounded-md bg-blue-500 cursor-pointer mt-3"
+        id="btn_AjouterService"
+        class="content-center px-2 text-white rounded-md bg-blue-500 cursor-pointer h-12 mt-2"
       >
         <i class="fa-solid fa-plus"></i>
         <button type="submit">Ajouter un service</button>
@@ -79,8 +76,8 @@
     <div class="py-3 text-gray-500 my-3">
       <span>1</span> services disponibles
     </div>
-    <section class="">
-      <div class="px-3 py-5 border-2 rounded-lg">
+    <section class="flex gap-6 justify-around flex-wrap">
+      <div class="px-3 py-5 border w-96 rounded-lg hover:">
         <div class="flex justify-between">
           <div>
             <label
@@ -92,14 +89,20 @@
           </div>
           <div class="text-xl flex">
             <div
-              class="cursor-pointer hover:bg-green-600 p-2 rounded hover:text-white rounded-lg h-12"
+              id="modifier_btn"
+              class="cursor-pointer hover:bg-blue-600 p-2 rounded hover:text-white rounded-lg h-12"
             >
-              <i class="fa-solid fa-pencil"></i>
+              <button type="">
+                <i class="fa-solid fa-pencil"></i>
+              </button>
             </div>
             <div
+              id="supprimer_btn"
               class="cursor-pointer hover:text-white hover:bg-red-600 p-2 rounded-lg h-12"
             >
-              <i class="fa-solid fa-trash"></i>
+              <button type="">
+                <i class="fa-solid fa-trash"></i>
+              </button>
             </div>
           </div>
         </div>
@@ -124,9 +127,11 @@
             <div class="text-xl text-green-600">
               <i class="fa-solid fa-dollar-sign"></i>
             </div>
-            <p class="text-green-600 pr-1">500</p>
-            <span class="text-green-600 pr-2">USD </span>
-            <span class="text-gray-500">/ par jour</span>
+            <div class="text-green-600 flex">
+              <p class="pr-1">500</p>
+              <span class="pr-2">USD </span>
+              <span class="text-gray-500">/ par jour</span>
+            </div>
           </div>
           <div class="flex text-gray-500">
             <div class="pr-1">
@@ -138,5 +143,6 @@
         </div>
       </div>
     </section>
+    <script src="services.js"></script>
   </body>
 </html>
