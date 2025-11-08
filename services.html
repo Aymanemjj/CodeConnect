@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/e53a9172bb.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Services</title>
+  </head>
+  <body class="pl-4 pr-6">
+    <h1 class="text-2xl py-2.5">Services Freelances</h1>
+    <p class="pb-5">
+      Découvrez nos services de développement web, UX design, marketing et plus
+      encore
+    </p>
+    <div class="p-2 border-2 rounded-lg flex gap-2">
+      <div>
+        <i class="fa-solid fa-gear"></i>
+      </div>
+      <label class="" for="">Mode gestion freelance</label>
+      <!--  toggle switch -->
+      <label class="relative inline-flex items-center cursor-pointer" id="cccc">
+        <input type="checkbox" class="sr-only peer" id="toggleSwitch" />
+        <div
+          class="w-12 h-6 bg-gray-300 rounded-full peer peer-checked:bg-indigo-600 transition-all"
+        ></div>
+        <div
+          class="absolute left-1 top-1 w-4 h-4 bg-white rounded-full transition-all peer-checked:translate-x-6"
+        ></div>
+      </label>
+    </div>
+    <p id="paragraph" class="p-3 my-5 border-2 rounded-lg">
+      Vous êtes en mode gestion. Vous pouvez ajouter, modifier ou supprimer des
+      services.
+    </p>
+    <section class="flex justify-between flex-wrap">
+      <div class="flex gap-28">
+              <div>
+        <span class="pr-2">Catégorie:</span>
+        <select
+          name="trier_Categorie"
+          id="trier_Categorie"
+          class="bg-gray-200 rounded-md p-2 cursor-pointer my-3"
+        >
+          <option>Toutes les catégories</option>
+          <option>Développement web</option>
+          <option>Ux Design</option>
+          <option>Marketing</option>
+        </select>
+      </div>
+      <div>
+        <span class="pr-2">Trier par prix:</span>
+        <select
+          name="trier_Prix"
+          id="trier_Prix"
+          class="bg-gray-200 rounded-md p-2 cursor-pointer my-3"
+        >
+          <option>Par defaut</option>
+          <option>Prix croisant</option>
+          <option>Prix décroissant</option>
+        </select>
+      </div>
+      </div>
+
+      <div
+        id="btn_AjouterService"
+        class="content-center px-2 text-white rounded-md bg-blue-500 cursor-pointer h-12 mt-2"
+      >
+        <i class="fa-solid fa-plus"></i>
+        <button type="submit">Ajouter un service</button>
+      </div>
+    </section>
+    <div class="py-3 text-gray-500 my-3">
+      <span>1</span> services disponibles
+    </div>
+    <section class="flex gap-6 justify-around flex-wrap">
+      <div class="px-3 py-5 border w-96 rounded-lg hover:">
+        <div class="flex justify-between">
+          <div>
+            <label
+              for=""
+              class="text-sm font-semibold bg-gray-200 p-1 rounded-xl"
+              >Developpement Web</label
+            >
+            <p class="py-3">Développement Mobile iOS/Android</p>
+          </div>
+          <div class="text-xl flex">
+            <div
+              id="modifier_btn"
+              class="cursor-pointer hover:bg-blue-600 p-2 rounded hover:text-white rounded-lg h-12"
+            >
+              <button type="">
+                <i class="fa-solid fa-pencil"></i>
+              </button>
+            </div>
+            <div
+              id="supprimer_btn"
+              class="cursor-pointer hover:text-white hover:bg-red-600 p-2 rounded-lg h-12"
+            >
+              <button type="">
+                <i class="fa-solid fa-trash"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-gray-500 pb-2">
+          <i class="fa-regular fa-user"></i>
+          <label for="">Abderrazak Aamaich</label>
+        </div>
+        <p class="py-8 text-gray-500">
+          Applications mobiles natives et cross-platform avec React Native et
+          Flutter
+        </p>
+        <div class="text-sm flex gap-4 pb-6">
+          <span class="border rounded-2xl px-2 py-1">React Native</span>
+          <span class="border rounded-2xl px-2 py-1">Flutter</span>
+          <span class="border rounded-2xl px-2 py-1">iOS</span>
+          <span class="border rounded-2xl px-2 py-1">Android</span>
+        </div>
+        <div class="h-0.5 bg-gray-200 my-5"></div>
+        <div class="flex justify-between">
+          <div class="flex text-center">
+            <div class="text-xl text-green-600">
+              <i class="fa-solid fa-dollar-sign"></i>
+            </div>
+            <div class="text-green-600 flex">
+              <p class="pr-1">500</p>
+              <span class="pr-2">USD </span>
+              <span class="text-gray-500">/ par jour</span>
+            </div>
+          </div>
+          <div class="flex text-gray-500">
+            <div class="pr-1">
+              <i class="fa-regular fa-clock"></i>
+            </div>
+
+            <p>3-6 semaines</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="services.js"></script>
+  </body>
+</html>
