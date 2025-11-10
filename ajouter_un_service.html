@@ -14,9 +14,12 @@
     <form action="" class="  rounded-2xl p-3 pl-7 mt-3 bg-white">
       <div class="flex justify-between pb-2">
         <h2 class="text-xl ">Ajouter un nouveau service</h2>
-        <div>
+        <div id="return_btn">
+          <button type="submit" class="hover:text-red-600">
           <i class="fa-solid fa-xmark"></i>
+        </button>
         </div>
+        
       </div>
       <div class="flex flex-col">
         <label for="">Titre de service:</label>
@@ -65,10 +68,10 @@
         <input type="text" placeholder="Ex: React, Node.js ..." class=" bg-gray-200 rounded p-2" />
       </div>
       <div class="flex justify-between">
-        <div class="border-2 cursor-pointer p-2 rounded-xl w-28 text-center"><button>Annuler</button></div>
-        <div class="cursor-pointer p-2 rounded-xl w-28 text-center bg-blue-600 text-white"><button>Ajouter</button></div>
+        <div id="btn_annuler" class="border-2 cursor-pointer p-2 rounded-xl w-28 text-center hover:text-white hover:bg-red-600 hover:border-red-600"><button type="submit">Annuler</button></div>
+        <div id="btn_ajouter" class="cursor-pointer p-2 rounded-xl w-28 text-center bg-blue-600 text-white"><button type="submit">Ajouter</button></div>
       </div>
     </form>
-    <script src="a"></script>
+    <script src="services.js"></script>
   </body>
 </html>
