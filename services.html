@@ -32,8 +32,8 @@
         ></div>
       </label>
     </div>
-    <p id="paragraph" class="p-3 my-5 border-2 rounded-lg">
-      Vous êtes en mode gestion. Vous pouvez ajouter, modifier ou supprimer des
+    <p id="paragraph" class="p-3 my-5 border-2 border-blue-400 rounded-lg text-blue-500 bg-blue-50">
+      Vous êtes en mode gestion. Vous pouvez ajouter, <span class="text-green-600">modifier</span> ou <span class="text-red-600">supprimer</span> des
       services.
     </p>
     <section class="flex justify-between flex-wrap">
@@ -76,7 +76,7 @@
     <div class="py-3 text-gray-500 my-3">
       <span>1</span> services disponibles
     </div>
-    <section class="flex gap-6 justify-around flex-wrap">
+    <section id="list_Services" class="flex gap-6 justify-around flex-wrap">
       <div class="px-3 py-5 border w-96 rounded-lg hover:">
         <div class="flex justify-between">
           <div>
@@ -92,13 +92,13 @@
               id="modifier_btn"
               class="cursor-pointer hover:bg-blue-600 p-2 rounded hover:text-white rounded-lg h-12"
             >
-              <button type="">
+              <button type="submit">
                 <i class="fa-solid fa-pencil"></i>
               </button>
             </div>
             <div
               id="supprimer_btn"
-              class="cursor-pointer hover:text-white hover:bg-red-600 p-2 rounded-lg h-12"
+              class=" cursor-pointer hover:text-white hover:bg-red-600 p-2 rounded-lg h-12"
             >
               <button type="">
                 <i class="fa-solid fa-trash"></i>
