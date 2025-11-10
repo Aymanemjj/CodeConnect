@@ -1,0 +1,47 @@
+{
+    "missionTable": [
+        {
+            "missionName": "E-commerce Website Development",
+            "missionNiveau": "Expert",
+            "siteName": "TechShop Inc.",
+            "missionDescription": "We need a modern e-commerce platform built with React and Node.js. The platform should include product catalog, shopping cart, payment integration, and admin dashboard. Responsive design is essential.",
+            "missionTools": [
+                "React",
+                "Node.js",
+                "MongoDB",
+                "Stripe",
+                "Tailwind CSS"
+            ],
+            "missionPrix": [
+                5000,
+                10000
+            ],
+            "missionDure": [
+                2,
+                3
+            ],
+            "missionContrat": "contrat à distance"
+        },
+        {
+            "missionName": "Brand Identity Design Package",
+            "missionNiveau": "Intermediate",
+            "siteName": "GreenLeaf Organics",
+            "missionDescription": "Seeking a creative designer to develop complete brand identity including logo, color palette, typography, brand guidelines, and business card designs for our organic food company.",
+            "missionTools": [
+                "Illustrator",
+                "Branding",
+                "Logo Design",
+                "Print Design"
+            ],
+            "missionPrix": [
+                2000,
+                4000
+            ],
+            "missionDure": [
+                1,
+                5
+            ],
+            "missionContrat": "contrat au site"
+        }
+    ]
+}

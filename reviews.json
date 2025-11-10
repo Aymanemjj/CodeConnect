@@ -1,0 +1,34 @@
+{
+    "Review":[
+        {"pfp": "",
+         "fullName": "Gustavo Fring",
+         "rating": "4.5",
+         "date":"Feb,2025", 
+         "review":"Very good!!!!"},
+
+         {"pfp": "",
+         "fullName": "Walter White",
+         "rating": "1",
+         "date":"Feb,2025", 
+         "review":"Very good!!!!"},
+
+         {"pfp": "",
+         "fullName": "Saul Goodman",
+         "rating": "5",
+         "date":"Feb,2025", 
+         "review":"Very good!!!!"},
+
+         {"pfp": "",
+         "fullName": "Jesse Pinkman",
+         "rating": "2",
+         "date":"Feb,2025", 
+         "review":"Very good!!!!"},
+
+         {"pfp": "",
+         "fullName": "Mike Ehrmantraut",
+         "rating": "3",
+         "date":"Feb,2025", 
+         "review":"Very good!!!!"}
+    ]
+    
+}
