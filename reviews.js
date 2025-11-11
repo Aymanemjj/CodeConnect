@@ -24,8 +24,8 @@ function reviewsDisplay(rSection, w){
                     <p class="w-128 text-gray-600 text-sm mt-4 mb-2">${w.Review[i].review}</p>
                     <div class="h-0.5 bg-gray-300 mb-2"></div>
                     <div class="flex gap-4">
-                    <button type="button"   class=" helpfulBtn text-sm text-gray-600 hover:bg-gray-200 p-1 rounded-sm"><i class="fa-regular fa-thumbs-up"></i><span>Helpful</span></button>
-                    <button type="button"   class=" replyBtn text-sm text-gray-600 hover:bg-gray-200 p-1 rounded-sm"><i class="fa-solid fa-reply"></i><span>Reply</span></button>
+                    <button type="button"   class=" helpfulBtn text-sm text-gray-600 hover:bg-gray-200 p-1 rounded-sm cursor-pointer"><i class="fa-regular fa-thumbs-up"></i><span>Helpful</span></button>
+                    <button type="button"   class=" replyBtn text-sm text-gray-600 hover:bg-gray-200 p-1 rounded-sm cursor-pointer"><i class="fa-solid fa-reply"></i><span>Reply</span></button>
                     </div>
                     
                 </div>`
@@ -33,13 +33,13 @@ function reviewsDisplay(rSection, w){
     }
     //Like button changer 
     document.querySelectorAll(".helpfulBtn").forEach(element => {
-    element.addEventListener("click",helpful);
+    element.addEventListener('click',helpful);
     })
 }
 
 
-function helpful(event){
-    event.currentTarget.innerHTML=`<i class="fa-regular fa-thumbs-up"></i><span>Helpful</span>`
+function helpful(element){
+    element.innerHTML='<i class="fa-solid fa-thumbs-up"></i><span>Helpful</span>'
 
 }
 
