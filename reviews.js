@@ -33,14 +33,14 @@ function reviewsDisplay(rSection, w){
     }
     //Like button changer 
     document.querySelectorAll(".helpfulBtn").forEach(element => {
-    element.addEventListener('click',helpful);
+        element.addEventListener('click' , helpful);
     })
 }
 
 
-function helpful(element){
-    element.innerHTML='<i class="fa-solid fa-thumbs-up"></i><span>Helpful</span>'
-
+function helpful(event){
+    console.log(event.currentTarget);
+    event.currentTarget.innerHTML='<i class="fa-solid fa-thumbs-up"></i><span>Helpful</span>'
 }
 
 //Modal for replying
