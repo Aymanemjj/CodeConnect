@@ -21,12 +21,20 @@ async function missionList() {
             }
         }
 
-        document.getElementById(`mission-prix${num}`).textContent = mission.missionPrix[0]+"$ - "+mission.missionPrix[1]+"$";
-        document.getElementById(`mission-dure${num}`).textContent =mission.missionDure[0]+" - " +mission.missionDure[1]+" monts";
+        document.getElementById(`mission-prix${num}`).textContent = mission.missionPrix[0] + "$ - " + mission.missionPrix[1] + "$";
+        document.getElementById(`mission-dure${num}`).textContent = mission.missionDure[0] + " - " + mission.missionDure[1] + " monts";
         document.getElementById(`mission-contrat${num}`).textContent = mission.missionContrat;
     });
 
+    for (let i = 0; i < data.missionTable.length; i++) {
+        let btn = document.getElementById(`button${i + 1}`);
+        btn.addEventListener('click', () =>{
+            window.location.href = 'mission-postule.html'
+        })
 
+    }
 }
 
 missionList();
+
+
