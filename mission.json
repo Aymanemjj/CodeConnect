@@ -42,6 +42,27 @@
                 5
             ],
             "missionContrat": "contrat au site"
+        },
+        {
+            "missionName": "Mobile App Development - Fitness Tracking",
+            "missionNiveau": "Expert",
+            "siteName": "FitLife Technologies",
+            "missionDescription": "Build a cross-platform mobile app for fitness tracking with workout logging, progress charts, social features, and integration with wearable devices.",
+            "missionTools": [
+                "React Native",
+                "Firebase",
+                "Health APIs",
+                "UI/UX"
+            ],
+            "missionPrix": [
+                15000,
+                25000
+            ],
+            "missionDure": [
+                4,
+                6
+            ],
+            "missionContrat": "contrat au site"
         }
     ]
 }
