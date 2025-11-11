@@ -7,6 +7,7 @@ let modifier_btn = document.getElementById("modifier_btn");
 let Modifier_btn = document.getElementById("Modifier_btn");
 let return_btn = document.getElementById("return_btn");
 let btn_annuler = document.querySelectorAll("btn_annuler");
+let categories = document.querySelectorAll(".categorie");
 
 function ModeFreelance() {
   
@@ -37,14 +38,13 @@ function navigation(){
 }
 navigation();
 
+// trier par categorie 
 
+function trierParCategorie(){
+  let trierCategorie = document.getElementById('trier_Categorie');
+  trierCategorie.addEventListener('change', function(){
+    
 
-// if (modifier_btn) {
-//   modifier_btn.addEventListener("click", function () {
-//     window.location.href = "modifier_service.html";
-//   });
-// }
+  })
 
-// return_btn.addEventListener("click", function () {
-//   window.location.href = "services.html";
-// });
+}
