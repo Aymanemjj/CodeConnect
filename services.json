@@ -1,0 +1,52 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "titre": "Développement Mobile iOS/Android",
+      "categorie": "Développement Web",
+      "freelance": "Abderrazak Aamaich",
+      "description": "Applications mobiles natives et cross-platform avec React Native et Flutter",
+      "prix": 500,
+      "unite_prix": "par jour",
+      "delai": "3-6 semaines",
+      "competences": ["React Native", "Flutter", "iOS", "Android"],
+      "disponible": true
+    },
+    {
+      "id": 2,
+      "titre": "Design d'interface moderne",
+      "categorie": "UX Design",
+      "freelance": "Mohamed Elgholb",
+      "description": "Création d'interfaces utilisateur modernes et responsive",
+      "prix": 275,
+      "unite_prix": "par heure",
+      "delai": "1-2 semaines",
+      "competences": ["Figma", "Adobe XD", "UI/UX", "Prototypage"],
+      "disponible": true
+    },
+    {
+      "id": 3,
+      "titre": "Design d'interface moderne",
+      "categorie": "Marketing",
+      "freelance": "Abdellah Ait Bahou",
+      "description": "Création d'interfaces utilisateur modernes et responsive",
+      "prix": 195,
+      "unite_prix": "par heure",
+      "delai": "1 semaine",
+      "competences": ["Figma", "Adobe XD", "UI/UX", "Prototypage"],
+      "disponible": true
+    },
+    {
+      "id": 4,
+      "titre": "Stratégie marketing digital",
+      "categorie": "UX Design",
+      "freelance": "Aymane Jaafori",
+      "description": "Stratégie complète de marketing digital pour votre entreprise",
+      "prix": 2000,
+      "unite_prix": "par projet",
+      "delai": "4-8 semaines",
+      "competences": ["SEO", "Réseaux sociaux", "Content Marketing", "Analytics"],
+      "disponible": true
+    }
+  ]
+}

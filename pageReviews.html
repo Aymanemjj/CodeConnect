@@ -16,7 +16,7 @@
     <title>CodeConnect</title>
 </head>
 <body>
-    <header>
+    <header class="shadow-sm shadow-gray-300 sticky top-0 bg-white">
         <div class="flex justify-between p-4 px-8 list-none items-center ">
                 <h3 class="cursor-pointer text-blue-600 font-bold text-2xl">CodeConnect</h3>
             <div class="flex gap-8 justify-end items-center">
@@ -62,7 +62,33 @@
             </div>
         </div>
         <div id="Reviews">
-            <h3>All Reviews (3)</h3>
+            <h3 id="reviewsCount"></h3>
+            <div id="myModal" class="modal bg-white rounded-xl">
+                <div class="modalContent">
+                    <div class="flex justify-between m-2">
+                        <h2 class="modalHeader">Reply to Review </h2>
+                        <button id="closeBtn" type="button"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                        <div id="modalHero" class="bg-gray-100 rounded-md flex-row gap-1 m-4">
+                            <div class="m-4">
+                                <div class="flex gap-2 items-center ">
+                                    <div class="rounded-full size-8 bg-cover bg-[url(images/pablo.webp)]"></div>
+                                    <div class="flex-row">
+                                        <h3 class="text-gray-500">Pablo</h3>
+                                        <h3 class="text-xs text-gray-500"><i class="fa-solid fa-star" style="color: #FFD43B;"></i><span>5.0</span></h3>
+                                    </div>
+                                </div>
+                                <p class="text-gray-500 text-sm">VeryGood!!!</p>
+                            </div>
+                    </div>
+                    <div class="flex flex-col m-4 gap-2">
+                    <small>Your Reply</small>
+                    <input type="text" maxlength="500" placeholder="Write a professional and thoughtful reply to this review..."  class="bg-gray-100 text-left text-sm text-gray-500 rounded-lg border-gray-500 p-2 text-sm ">
+                    <small class="text-gray-400">Tip: Thank the client, address any specific points they mentioned, and maintain a professional tone.</small>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </section>
     <footer class="bg-slate-900 text-white flex-row p-12">
