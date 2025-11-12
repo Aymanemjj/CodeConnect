@@ -44,11 +44,11 @@
     ],
     "project": [
       {
-        "name1": "Portfolio personnel interactif",
+        "name": "Portfolio personnel interactif",
         "description": "Développement complet avec animations CSS et React"
       },
       {
-        "name2": "Application e-commerce",
+        "name": "Application e-commerce",
         "description": "Intégration front-end et optimisation responsive"
       }
     ]
@@ -97,11 +97,11 @@
     ],
     "project": [
       {
-        "name1": "Plateforme de gestion de projets",
+        "name": "Plateforme de gestion de projets",
         "description": "Développement d'un back-end API REST et intégration front-end"
       },
       {
-        "name2": "Dashboard analytique en temps réel",
+        "name": "Dashboard analytique en temps réel",
         "description": "Utilisation de WebSocket et React"
       }
     ]
@@ -184,8 +184,8 @@
     ],
     "skillsGraphic": [
       {
-        "image": ["images/figma.webp", "images/xd.webp", "images/canva.webp", "images/photoshop.webp"],
-        "name": ["figma", "adobe xd", "canva", "photoshop"]
+        "image": "images/figma.webp", 
+        "name": "figma"
       },
        {
         "image": "images/xd.webp",
@@ -202,11 +202,11 @@
     ],
     "project": [
       {
-        "name1": "Application de livraison locale",
+        "name": "Application de livraison locale",
         "description": "Développement cross-platform avec Flutter"
       },
       {
-        "name2": "App de suivi santé",
+        "name": "App de suivi santé",
         "description": "Intégration d’API de capteurs et conception d’interface mobile"
       }
     ]
@@ -255,11 +255,11 @@
     ],
     "project": [
       {
-        "name1": "Optimisation SEO d’un blog tech",
+        "name": "Optimisation SEO d’un blog tech",
         "description": "Amélioration du trafic organique de +120% en 3 mois"
       },
       {
-        "name2": "Rédaction de fiches produits e-commerce",
+        "name": "Rédaction de fiches produits e-commerce",
         "description": "Contenus orientés conversion et SEO"
       }
     ]
