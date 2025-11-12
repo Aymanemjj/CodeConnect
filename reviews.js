@@ -15,6 +15,7 @@ function reviewsDisplay(rSection, w){
     for(let i = 0; i<w.Review.length; i++){
         const reviewDiv = document.createElement("div")
         reviewDiv.className=("bg-white rounded-lg flex gap-4 border-gray-300 border-1 p-4 mt-4")
+        reviewDiv.id=`${i}`
         reviewDiv.innerHTML = `
                 <div class="rounded-full size-12 bg-cover bg-[url(images/pablo.webp)]"></div>
                 <div class="flex-row">
@@ -35,27 +36,38 @@ function reviewsDisplay(rSection, w){
     document.querySelectorAll(".helpfulBtn").forEach(element => {
         element.addEventListener('click' , helpful);
     })
+    document.querySelectorAll(".replyBtn").forEach(element=> {
+        element.addEventListener("click" , openModal)
+    })
 }
 
-
+//Function for Liking and unLiking
 function helpful(event){
-    console.log(event.currentTarget);
-    event.currentTarget.innerHTML='<i class="fa-solid fa-thumbs-up"></i><span>Helpful</span>'
+    if(event.currentTarget.querySelector("i").className=="fa-regular fa-thumbs-up"){
+    event.currentTarget.querySelector("i").className="fa-solid fa-thumbs-up"
+    }else{
+    event.currentTarget.querySelector("i").className="fa-regular fa-thumbs-up"
+    }
 }
 
 //Modal for replying
 const modal = document.getElementById("myModal");
-const replyBtn = document.getElementsByClassName("replyBtn");
 const closeBtn = document.getElementById("closeBtn");
 
-replyBtn.onclick = function(){
-    modal.style.display = "block";
+function openModal(event){
+    console.log("enter modal");
+    let temp = event.currentTarget.parentElement.parentElement.parentElement
+    console.log(temp);
+    console.log(temp.getAttribute("id"));
+    
+    document.getElementById("Rname").innerText=`${w.Review[temp.id].fullName}`
+    document.getElementById("Rrating").innerText=`${w.Review[temp.id].rating}`
+    document.getElementById("Review").innerText=`${w.Review[temp.id].review}`
+    modal.classList.replace("hidden","block");
+    
 }
 closeBtn.onclick = function(){
-    modal.style.display = "none"
+
+    modal.classList.replace("block","hidden")
 }
-window.onclick = function(event){
-    if(event.target == modal){
-        modal.style.display = "none";
-    }
-}
+
