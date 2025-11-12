@@ -13,276 +13,292 @@
   <body>
     <!-- nav-bar -->
     <header class="shadow-sm sticky top-0 bg-white z-10">
-        <div class="flex justify-between p-4 px-8 list-none items-center ">
-            <h3 class="cursor-pointer text-blue-600 font-bold text-2xl">CodeConnect</h3>
-            <div class="flex gap-8 justify-end items-center">
-                <nav class="flex gap-8">
-                    <li class="cursor-pointer">Home</li>
-                    <li class="cursor-pointer">Find Talent</li>
-                    <li class="cursor-pointer">Find Work</li>
-                    <li class="cursor-pointer">Services</li>
-                    <li class="cursor-pointer">Contact</li>
-                </nav>
-                <div class="flex gap-4">
-                    <button class="hover:bg-gray-200 p-2 rounded-md cursor-pointer" type="button">Log In</button>
-                    <button class="bg-blue-600 hover:bg-sky-600 p-2 text-white rounded-md cursor-pointer"
-                        type="button">Sign Up</button>
-                </div>
-            </div>
+      <div class="flex justify-between p-4 px-8 list-none items-center">
+        <h3 class="cursor-pointer text-blue-600 font-bold text-2xl">
+          CodeConnect
+        </h3>
+        <div class="flex gap-8 justify-end items-center">
+          <nav class="flex gap-8">
+            <li class="cursor-pointer">Home</li>
+            <li class="cursor-pointer">Find Talent</li>
+            <li class="cursor-pointer">Find Work</li>
+            <li class="cursor-pointer">Services</li>
+            <li class="cursor-pointer">Contact</li>
+          </nav>
+          <div class="flex gap-4">
+            <button
+              class="hover:bg-gray-200 p-2 rounded-md cursor-pointer"
+              type="button"
+            >
+              Log In
+            </button>
+            <button
+              class="bg-blue-600 hover:bg-sky-600 p-2 text-white rounded-md cursor-pointer"
+              type="button"
+            >
+              Sign Up
+            </button>
+          </div>
         </div>
+      </div>
     </header>
     <!-- body -->
-     <section class="pl-4 pr-6 mb-5">
+    <section class="pl-4 pr-6 mb-5">
       <h1 class="text-2xl py-2.5">Services Freelances</h1>
-    <p class="pb-5">
-      Découvrez nos services de développement web, UX design, marketing et plus
-      encore
-    </p>
-    <div class="p-2 border-2 rounded-lg flex gap-2">
-      <div>
-        <i class="fa-solid fa-gear"></i>
+      <p class="pb-5">
+        Découvrez nos services de développement web, UX design, marketing et
+        plus encore
+      </p>
+      <div class="p-2 border-2 rounded-lg flex gap-2">
+        <div>
+          <i class="fa-solid fa-gear"></i>
+        </div>
+        <label class="" for="">Mode gestion freelance</label>
+        <!--  toggle switch -->
+        <label class="relative inline-flex items-center cursor-pointer">
+          <input type="checkbox" class="sr-only peer" id="toggleSwitch" />
+          <div
+            class="w-12 h-6 bg-gray-300 rounded-full peer peer-checked:bg-indigo-600 transition-all"
+          ></div>
+          <div
+            class="absolute left-1 top-1 w-4 h-4 bg-white rounded-full transition-all peer-checked:translate-x-6"
+          ></div>
+        </label>
       </div>
-      <label class="" for="">Mode gestion freelance</label>
-      <!--  toggle switch -->
-      <label class="relative inline-flex items-center cursor-pointer">
-        <input type="checkbox" class="sr-only peer" id="toggleSwitch" />
-        <div
-          class="w-12 h-6 bg-gray-300 rounded-full peer peer-checked:bg-indigo-600 transition-all"
-        ></div>
-        <div
-          class="absolute left-1 top-1 w-4 h-4 bg-white rounded-full transition-all peer-checked:translate-x-6"
-        ></div>
-      </label>
-    </div>
-    <p id="paragraph" class="p-3 my-5 border-2 border-blue-400 rounded-lg text-blue-500 bg-blue-50">
-      Vous êtes en mode gestion. Vous pouvez ajouter, <span class="text-green-600">modifier</span> ou <span class="text-red-600">supprimer</span> des
-      services.
-    </p>
-    <!-- trier par categorie ou par prix -->
-    <section class="flex justify-between flex-wrap">
-      <div class="flex gap-28">
-              <div>
-        <span class="pr-2">Catégorie:</span>
-        <select
-          name="trier_Categorie"
-          id="trier_Categorie"
-          class="bg-gray-200 rounded-md p-2 cursor-pointer my-3"
-        >
-          <option>Toutes les catégories</option>
-          <option>Développement web</option>
-          <option>Ux Design</option>
-          <option>Marketing</option>
-        </select>
-      </div>
-      <div>
-        <span class="pr-2">Trier par prix:</span>
-        <select
-          name="trier_Prix"
-          id="trier_Prix"
-          class="bg-gray-200 rounded-md p-2 cursor-pointer my-3"
-        >
-          <option>Par defaut</option>
-          <option>Prix croisant</option>
-          <option>Prix décroissant</option>
-        </select>
-      </div>
-      </div>
-      <!-- botton ajouter un service -->
-      <div
-        id="btn_AjouterService"
-        class="content-center px-2 text-white rounded-md bg-blue-500 cursor-pointer h-12 mt-2"
+      <p
+        id="paragraph"
+        class="p-3 my-5 border-2 border-blue-400 rounded-lg text-blue-500 bg-blue-50"
       >
-        <i class="fa-solid fa-plus"></i>
-        <button type="submit">Ajouter un service</button>
-      </div>
-    </section>
-    <!-- Nombres des services desponibles -->
-    <div class="py-3 text-gray-500 my-3">
-      <span>1</span> services disponibles
-    </div>
-    <!-- Section de cartes services -->
-    <section id="list_Services" class="flex gap-6 justify-around flex-wrap">
-      <!-- test carte 1 -->
-      <div class="px-3 py-5 border w-96 rounded-lg hover:">
-        <div class="flex justify-between">
+        Vous êtes en mode gestion. Vous pouvez ajouter,
+        <span class="text-green-600">modifier</span> ou
+        <span class="text-red-600">supprimer</span> des services.
+      </p>
+      <!-- trier par categorie ou par prix -->
+      <section class="flex justify-between flex-wrap">
+        <div class="flex gap-28">
           <div>
-            <label
-              for=""
-              class="categorie text-sm font-semibold bg-gray-200 p-1 rounded-xl"
-              >Developpement Web</label
+            <span class="pr-2">Catégorie:</span>
+            <select
+              name="trier_Categorie"
+              id="trier_Categorie"
+              class="bg-gray-200 rounded-md p-2 cursor-pointer my-3"
             >
-            <p class="py-3">Développement Mobile iOS/Android</p>
+              <option>Toutes les catégories</option>
+              <option>Développement web</option>
+              <option>Ux Design</option>
+              <option>Marketing</option>
+            </select>
           </div>
-          <div class="text-xl flex">
-            <div
-              id="modifier_btn"
-              class="cursor-pointer hover:bg-blue-600 p-2 rounded hover:text-white rounded-lg h-12"
-            >
-              <button type="submit">
-                <i class="fa-solid fa-pencil"></i>
-              </button>
-            </div>
-            <div
-              id="supprimer_btn"
-              class=" cursor-pointer hover:text-white hover:bg-red-600 p-2 rounded-lg h-12"
-            >
-              <button type="">
-                <i class="fa-solid fa-trash"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div class="text-gray-500 pb-2">
-          <i class="fa-regular fa-user"></i>
-          <label for="">Abderrazak Aamaich</label>
-        </div>
-        <p class="py-8 text-gray-500">
-          Applications mobiles natives et cross-platform avec React Native et
-          Flutter
-        </p>
-        <div class="text-sm flex gap-4 pb-6">
-          <span class="border rounded-2xl px-2 py-1">React Native</span>
-          <span class="border rounded-2xl px-2 py-1">Flutter</span>
-          <span class="border rounded-2xl px-2 py-1">iOS</span>
-          <span class="border rounded-2xl px-2 py-1">Android</span>
-        </div>
-        <div class="h-0.5 bg-gray-200 my-5"></div>
-        <div class="flex justify-between">
-          <div class="flex text-center">
-            <div class="text-xl text-green-600">
-              <i class="fa-solid fa-dollar-sign"></i>
-            </div>
-            <div class="text-green-600 flex">
-              <p class="pr-1">1000</p>
-              <span class="pr-2">USD </span>
-              <span class="text-gray-500">/ par jour</span>
-            </div>
-          </div>
-          <div class="flex text-gray-500">
-            <div class="pr-1">
-              <i class="fa-regular fa-clock"></i>
-            </div>
-
-            <p>3-6 semaines</p>
-          </div>
-        </div>
-      </div>
-      <!-- test carte 2 -->
-      <div class="px-3 py-5 border w-96 rounded-lg hover:">
-        <div class="flex justify-between">
           <div>
-            <label
-              for=""
-              class="categorie text-sm font-semibold bg-gray-200 p-1 rounded-xl"
-              >Ux Design</label
+            <span class="pr-2">Trier par prix:</span>
+            <select
+              name="trier_Prix"
+              id="trier_Prix"
+              class="bg-gray-200 rounded-md p-2 cursor-pointer my-3"
             >
-            <p class="py-3">Développement Mobile iOS/Android</p>
-          </div>
-          <div class="text-xl flex">
-            <div
-              id="modifier_btn"
-              class="cursor-pointer hover:bg-blue-600 p-2 rounded hover:text-white rounded-lg h-12"
-            >
-              <button type="submit">
-                <i class="fa-solid fa-pencil"></i>
-              </button>
-            </div>
-            <div
-              id="supprimer_btn"
-              class=" cursor-pointer hover:text-white hover:bg-red-600 p-2 rounded-lg h-12"
-            >
-              <button type="">
-                <i class="fa-solid fa-trash"></i>
-              </button>
-            </div>
+              <option>Par defaut</option>
+              <option>Prix croisant</option>
+              <option>Prix décroissant</option>
+            </select>
           </div>
         </div>
-
-        <div class="text-gray-500 pb-2">
-          <i class="fa-regular fa-user"></i>
-          <label for="">Abderrazak Aamaich</label>
+        <!-- botton ajouter un service -->
+        <div
+          id="btn_AjouterService"
+          class="content-center px-2 text-white rounded-md bg-blue-500 cursor-pointer h-12 mt-2"
+        >
+          <i class="fa-solid fa-plus"></i>
+          <button type="submit">Ajouter un service</button>
         </div>
-        <p class="py-8 text-gray-500">
-          Applications mobiles natives et cross-platform avec React Native et
-          Flutter
-        </p>
-        <div class="text-sm flex gap-4 pb-6">
-          <span class="border rounded-2xl px-2 py-1">React Native</span>
-          <span class="border rounded-2xl px-2 py-1">Flutter</span>
-          <span class="border rounded-2xl px-2 py-1">iOS</span>
-          <span class="border rounded-2xl px-2 py-1">Android</span>
-        </div>
-        <div class="h-0.5 bg-gray-200 my-5"></div>
-        <div class="flex justify-between">
-          <div class="flex text-center">
-            <div class="text-xl text-green-600">
-              <i class="fa-solid fa-dollar-sign"></i>
-            </div>
-            <div class="text-green-600 flex">
-              <p class="pr-1">500</p>
-              <span class="pr-2">USD </span>
-              <span class="text-gray-500">/ par jour</span>
-            </div>
-          </div>
-          <div class="flex text-gray-500">
-            <div class="pr-1">
-              <i class="fa-regular fa-clock"></i>
-            </div>
-
-            <p>3-6 semaines</p>
-          </div>
-        </div>
+      </section>
+      <!-- Nombres des services desponibles -->
+      <div class="py-3 text-gray-500 my-3">
+        <span>1</span> services disponibles
       </div>
+      <!-- Section de cartes services -->
+      <section id="list_Services" class="flex gap-6 justify-around flex-wrap">
+        <!-- test carte 1 -->
+       <div class="px-3 py-5 border w-96 rounded-lg shadow-xl">
+          <div class="flex justify-between">
+            <div>
+              <label
+                for=""
+                class="categorie text-sm font-semibold bg-gray-200 p-1 rounded-xl"
+                >Ux Design</label
+              >
+              <p class="py-3">Développement Mobile iOS/Android</p>
+            </div>
+            <div class="text-xl flex">
+              <div
+                class="modifier_btn hidden cursor-pointer rounded hover:text-green-600"
+              ><i class="fa-solid fa-pencil">
+                <button type="submit"></button>
+              </i>
+              </div>
+              <div
+                class="supprimer_btn hidden cursor-pointer hover:text-red-600 pl-2"
+              >
+                <i class="fa-solid fa-trash">
+                  <button type="submit"></button>
+                </i>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-gray-500 pb-2">
+            <i class="fa-regular fa-user"></i>
+            <label for="">Abderrazak Aamaich</label>
+          </div>
+          <p class="py-8 text-gray-500">
+            Applications mobiles natives et cross-platform avec React Native et
+            Flutter
+          </p>
+          <div class="text-sm flex gap-4 pb-6">
+            <span class="border rounded-2xl px-2 py-1">React Native</span>
+            <span class="border rounded-2xl px-2 py-1">Flutter</span>
+            <span class="border rounded-2xl px-2 py-1">iOS</span>
+            <span class="border rounded-2xl px-2 py-1">Android</span>
+          </div>
+          <div class="h-0.5 bg-gray-200 my-5"></div>
+          <div class="flex justify-between">
+            <div class="flex text-center">
+              <div class="text-xl text-green-600">
+                <i class="fa-solid fa-dollar-sign"></i>
+              </div>
+              <div class="text-green-600 flex">
+                <p class="pr-1">500</p>
+                <span class="pr-2">USD </span>
+                <span class="text-gray-500">/ par jour</span>
+              </div>
+            </div>
+            <div class="flex text-gray-500">
+              <div class="pr-1">
+                <i class="fa-regular fa-clock"></i>
+              </div>
+
+              <p>3-6 semaines</p>
+            </div>
+          </div>
+        </div>
+        <!-- test carte 2 -->
+        <div class="px-3 py-5 border w-96 rounded-lg shadow-xl">
+          <div class="flex justify-between">
+            <div>
+              <label
+                for=""
+                class="categorie text-sm font-semibold bg-gray-200 p-1 rounded-xl"
+                >Ux Design</label
+              >
+              <p class="py-3">Développement Mobile iOS/Android</p>
+            </div>
+            <div class="text-xl flex">
+              <div
+                
+                class="modifier_btn hidden cursor-pointer rounded hover:text-green-600"
+              ><i class="fa-solid fa-pencil">
+                <button type="submit"></button>
+              </i>
+                
+              </div>
+              <div
+                
+                class="supprimer_btn hidden cursor-pointer hover:text-red-600 pl-2"
+              >
+                <i class="fa-solid fa-trash">
+                  <button type="submit"></button>
+                </i>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-gray-500 pb-2">
+            <i class="fa-regular fa-user"></i>
+            <label for="">Abderrazak Aamaich</label>
+          </div>
+          <p class="py-8 text-gray-500">
+            Applications mobiles natives et cross-platform avec React Native et
+            Flutter
+          </p>
+          <div class="text-sm flex gap-4 pb-6">
+            <span class="border rounded-2xl px-2 py-1">React Native</span>
+            <span class="border rounded-2xl px-2 py-1">Flutter</span>
+            <span class="border rounded-2xl px-2 py-1">iOS</span>
+            <span class="border rounded-2xl px-2 py-1">Android</span>
+          </div>
+          <div class="h-0.5 bg-gray-200 my-5"></div>
+          <div class="flex justify-between">
+            <div class="flex text-center">
+              <div class="text-xl text-green-600">
+                <i class="fa-solid fa-dollar-sign"></i>
+              </div>
+              <div class="text-green-600 flex">
+                <p class="pr-1">500</p>
+                <span class="pr-2">USD </span>
+                <span class="text-gray-500">/ par jour</span>
+              </div>
+            </div>
+            <div class="flex text-gray-500">
+              <div class="pr-1">
+                <i class="fa-regular fa-clock"></i>
+              </div>
+
+              <p>3-6 semaines</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </section>
-     </section>
-    
+
     <!-- footer -->
-     <footer class="bg-slate-900 text-white flex-row p-12">
-        <div class=" flex-row ">
-            <div class="flex justify-between ">
-                <div>
-                    <h2 class="cursor-pointer  font-bold ">CodeConnetc</h2>
-                    <p class="text-gray-500 font-thin text-sm">Connecting talented freelancers <br>with amazing projects
-                        worldwide.</p>
-                    <div>
-                        <i class="fa-brands fa-facebook-f"></i>
-                        <i class="fa-brands fa-twitter"></i>
-                        <i class="fa-brands fa-square-instagram"></i>
-                    </div>
-                </div>
-                <div class="gap-2">
-                    <h3 class="font-bold ">For Clients</h3>
-                    <h4 class="font-thin text-gray-500 text-sm">How to Hire</h4>
-                    <h4 class="font-thin text-gray-500 text-sm">Talent MarketPlace</h4>
-                    <h4 class="font-thin text-gray-500 text-sm">Project Catalog</h4>
-                    <h4 class="font-thin text-gray-500 text-sm">Enterprise</h4>
-                </div>
-                <div>
-                    <h3 class="font-bold ">For freelancers</h3>
-                    <h4 class="font-thin text-gray-500 text-sm">How to Find Work</h4>
-                    <h4 class="font-thin text-gray-500 text-sm">Become a Pro</h4>
-                    <h4 class="font-thin text-gray-500 text-sm">Success Stories</h4>
-                </div>
-                <div class="flex-row gap-4">
-                    <div>
-                        <h3 class="font-bold ">Company</h3>
-                    </div>
-                    <h4 class="font-thin text-gray-500 text-sm">About Us</h4>
-                    <h4 class="font-thin text-gray-500 text-sm">Contact</h4>
-                    <h4 class="font-thin text-gray-500 text-sm">Blog</h4>
-                </div>
+    <footer class="bg-slate-900 text-white flex-row p-12">
+      <div class="flex-row">
+        <div class="flex justify-between">
+          <div>
+            <h2 class="cursor-pointer font-bold">CodeConnetc</h2>
+            <p class="text-gray-500 font-thin text-sm">
+              Connecting talented freelancers <br />with amazing projects
+              worldwide.
+            </p>
+            <div>
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-square-instagram"></i>
             </div>
-            <div class=" flex  text-center justify-between">
-                <h2 class="font-thin text-gray-500 text-sm"><i class="fa-regular fa-copyright"></i> 2025 CodeConnect.
-                    All rights reserved.</h2>
-                <div class="flex gap-4 justify-center">
-                    <h3 class="font-thin text-gray-500 text-xs">Privacy Policy</h3>
-                    <h3 class="font-thin text-gray-500 text-xs">Terms of service</h3>
-                    <h3 class="font-thin text-gray-500 text-xs">Cookie Policy</h3>
-                </div>
+          </div>
+          <div class="gap-2">
+            <h3 class="font-bold">For Clients</h3>
+            <h4 class="font-thin text-gray-500 text-sm">How to Hire</h4>
+            <h4 class="font-thin text-gray-500 text-sm">Talent MarketPlace</h4>
+            <h4 class="font-thin text-gray-500 text-sm">Project Catalog</h4>
+            <h4 class="font-thin text-gray-500 text-sm">Enterprise</h4>
+          </div>
+          <div>
+            <h3 class="font-bold">For freelancers</h3>
+            <h4 class="font-thin text-gray-500 text-sm">How to Find Work</h4>
+            <h4 class="font-thin text-gray-500 text-sm">Become a Pro</h4>
+            <h4 class="font-thin text-gray-500 text-sm">Success Stories</h4>
+          </div>
+          <div class="flex-row gap-4">
+            <div>
+              <h3 class="font-bold">Company</h3>
             </div>
+            <h4 class="font-thin text-gray-500 text-sm">About Us</h4>
+            <h4 class="font-thin text-gray-500 text-sm">Contact</h4>
+            <h4 class="font-thin text-gray-500 text-sm">Blog</h4>
+          </div>
         </div>
+        <div class="flex text-center justify-between">
+          <h2 class="font-thin text-gray-500 text-sm">
+            <i class="fa-regular fa-copyright"></i> 2025 CodeConnect. All rights
+            reserved.
+          </h2>
+          <div class="flex gap-4 justify-center">
+            <h3 class="font-thin text-gray-500 text-xs">Privacy Policy</h3>
+            <h3 class="font-thin text-gray-500 text-xs">Terms of service</h3>
+            <h3 class="font-thin text-gray-500 text-xs">Cookie Policy</h3>
+          </div>
+        </div>
+      </div>
     </footer>
     <script src="services.js"></script>
   </body>
