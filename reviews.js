@@ -15,6 +15,7 @@ function reviewsDisplay(rSection, w){
     for(let i = 0; i<w.Review.length; i++){
         const reviewDiv = document.createElement("div")
         reviewDiv.className=("bg-white rounded-lg flex gap-4 border-gray-300 border-1 p-4 mt-4")
+        reviewDiv.id=`${i}`
         reviewDiv.innerHTML = `
                 <div class="rounded-full size-12 bg-cover bg-[url(images/pablo.webp)]"></div>
                 <div class="flex-row">
@@ -27,7 +28,10 @@ function reviewsDisplay(rSection, w){
                     <button type="button"   class=" helpfulBtn text-sm text-gray-600 hover:bg-gray-200 p-1 rounded-sm cursor-pointer"><i class="fa-regular fa-thumbs-up"></i><span>Helpful</span></button>
                     <button type="button"   class=" replyBtn text-sm text-gray-600 hover:bg-gray-200 p-1 rounded-sm cursor-pointer"><i class="fa-solid fa-reply"></i><span>Reply</span></button>
                     </div>
-                    
+                    <div id="replySection${i}" class=" hidden bg-sky-100 rounded-md w-full size-fill flex  m-2 gap-2 pl-0">
+                        <div class="bg-sky-500 h-fill rounded-tl-full rounded-bl-full w-1"></div>
+                        <p id="replyText${i}" class="text-wrap text-left text-xs text-gray-500 my-2"></p>
+                    </div>
                 </div>`
         rSection.appendChild(reviewDiv);
     }
@@ -35,27 +39,52 @@ function reviewsDisplay(rSection, w){
     document.querySelectorAll(".helpfulBtn").forEach(element => {
         element.addEventListener('click' , helpful);
     })
+    document.querySelectorAll(".replyBtn").forEach(element=> {
+        element.addEventListener("click" , openModal)
+    })
 }
 
-
+//Function for Liking and unLiking
 function helpful(event){
-    console.log(event.currentTarget);
-    event.currentTarget.innerHTML='<i class="fa-solid fa-thumbs-up"></i><span>Helpful</span>'
+    if(event.currentTarget.querySelector("i").className=="fa-regular fa-thumbs-up"){
+    event.currentTarget.querySelector("i").className="fa-solid fa-thumbs-up"
+    }else{
+    event.currentTarget.querySelector("i").className="fa-regular fa-thumbs-up"
+    }
 }
 
 //Modal for replying
 const modal = document.getElementById("myModal");
-const replyBtn = document.getElementsByClassName("replyBtn");
 const closeBtn = document.getElementById("closeBtn");
+const replyBtn = document.getElementById("replyBtn");
+let i;
+function openModal(event){
+    console.log("enter modal");
+    let temp = event.currentTarget.parentElement.parentElement.parentElement
 
-replyBtn.onclick = function(){
-    modal.style.display = "block";
+    document.getElementById("Rname").innerText=`${w.Review[temp.id].fullName}`
+    document.getElementById("Rrating").innerText=`${w.Review[temp.id].rating}`
+    document.getElementById("Review").innerText=`${w.Review[temp.id].review}`
+    modal.classList.replace("hidden","block");
+    document.getElementById("Rinput").focus()
+    i = temp.id
+    
 }
 closeBtn.onclick = function(){
-    modal.style.display = "none"
+    document.getElementById("Rinput").value="";
+    modal.classList.replace("block","hidden")
 }
-window.onclick = function(event){
-    if(event.target == modal){
-        modal.style.display = "none";
+
+replyBtn.onclick = function(){
+    let replyValue = document.getElementById("Rinput").value
+    document.getElementById(`replyText${i}`).innerText=replyValue;
+    document.getElementById(`replySection${i}`).classList.replace("hidden","block")
+    document.getElementById("Rinput").value="";
+    modal.classList.replace("block","hidden") 
+}
+document.getElementById("Rinput").addEventListener("keyup",function(event){
+    event.preventDefault();
+    if(event.key == "Enter"){
+        document.getElementById("replyBtn").click()
     }
-}
+})

@@ -18,7 +18,7 @@
 <body>
     <header class="shadow-sm shadow-gray-300 sticky top-0 bg-white">
         <div class="flex justify-between p-4 px-8 list-none items-center ">
-                <h3 class="cursor-pointer text-blue-600 font-bold text-2xl">CodeConnect</h3>
+                <h3 class="cursor-pointer text-sky-500 font-bold text-2xl">CodeConnect</h3>
             <div class="flex gap-8 justify-end items-center">
             <nav class="flex gap-8">
                 <li class="cursor-pointer">Home</li>
@@ -50,10 +50,10 @@
       </div>
     </section>
     <section class="bg-gray-100 flex justify-center gap-4 p-4">
-        <div class="bg-white rounded-lg flex flex-col gap-2 border-gray-300 border-1 p-4 size-fit sticky top-0">
+        <div class="bg-white rounded-lg flex flex-col gap-2 border-gray-300 border-1 p-4 size-fit sticky  top-32">
             <h2 class="mb-2 mt-1">Rating Breakdown</h2>
             <div class="flex flex-col gap-4">
-                <h3>5<i class="fa-solid fa-star" style="color: #FFD43B;"></i><span class="bg-yellow-500 w-5 h-1"></span>3</h3>
+                <h3>5<i class="fa-solid fa-star" style="color: #FFD43B;"></i><span class="bg-yellow-500"></span>3</h3>
                 <h3>4<i class="fa-solid fa-star" style="color: #FFD43B;"></i><span class="bg-yellow-500 w-5 h-1"></span>0</h3>
                 <h3>3<i class="fa-solid fa-star" style="color: #FFD43B;"></i><span class="bg-yellow-500 w-5 h-1"></span>0</h3>
                 <h3>2<i class="fa-solid fa-star" style="color: #FFD43B;"></i><span class="bg-yellow-500 w-5 h-1"></span>0</h3>
@@ -63,29 +63,30 @@
         </div>
         <div id="Reviews">
             <h3 id="reviewsCount"></h3>
-            <div id="myModal" class="modal bg-white rounded-xl">
-                <div class="modalContent">
+            <div id="myModal" class="rounded-xl hidden z-1 fixed w-2/5 border-gray-300 border-2 border-solid drop-shadow-2xl bg-white p-4 ">
+                <div class="modalContent bg-white rounded-md flex flex-col justify-center">
                     <div class="flex justify-between m-2">
                         <h2 class="modalHeader">Reply to Review </h2>
-                        <button id="closeBtn" type="button"><i class="fa-solid fa-xmark"></i></button>
+                        <button id="closeBtn" type="button" class="cursor-pointer hover:bg-gray-300 rounded-md p-1"><i class="fa-solid fa-xmark"></i></button>
                     </div>
                         <div id="modalHero" class="bg-gray-100 rounded-md flex-row gap-1 m-4">
                             <div class="m-4">
                                 <div class="flex gap-2 items-center ">
                                     <div class="rounded-full size-8 bg-cover bg-[url(images/pablo.webp)]"></div>
                                     <div class="flex-row">
-                                        <h3 class="text-gray-500">Pablo</h3>
-                                        <h3 class="text-xs text-gray-500"><i class="fa-solid fa-star" style="color: #FFD43B;"></i><span>5.0</span></h3>
+                                        <h3 id="Rname" class="text-gray-500">Pablo</h3>
+                                        <h3   class="text-xs text-gray-500"><i class="fa-solid fa-star" style="color: #FFD43B;"></i><span id="Rrating">5.0</span></h3>
                                     </div>
                                 </div>
-                                <p class="text-gray-500 text-sm">VeryGood!!!</p>
+                                <p id="Review" class="text-gray-500 text-sm">VeryGood!!!</p>
                             </div>
                     </div>
                     <div class="flex flex-col m-4 gap-2">
                     <small>Your Reply</small>
-                    <input type="text" maxlength="500" placeholder="Write a professional and thoughtful reply to this review..."  class="bg-gray-100 text-left text-sm text-gray-500 rounded-lg border-gray-500 p-2 ">
+                    <input id="Rinput"  type="text" maxlength="500" placeholder="Write a professional and thoughtful reply to this review..."  class="bg-gray-100 text-left text-xs text-gray-500 rounded-lg border-gray-500 p-2">
                     <small class="text-gray-400">Tip: Thank the client, address any specific points they mentioned, and maintain a professional tone.</small>
                     </div>
+                    <button id="replyBtn" type="submit" class="bg-sky-600 text-white p-2  rounded-md w-full cursor-pointer hover:bg-blue-700 ">Reply</button>
                 </div>
 
             </div>
