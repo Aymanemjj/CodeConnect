@@ -28,7 +28,10 @@ function reviewsDisplay(rSection, w){
                     <button type="button"   class=" helpfulBtn text-sm text-gray-600 hover:bg-gray-200 p-1 rounded-sm cursor-pointer"><i class="fa-regular fa-thumbs-up"></i><span>Helpful</span></button>
                     <button type="button"   class=" replyBtn text-sm text-gray-600 hover:bg-gray-200 p-1 rounded-sm cursor-pointer"><i class="fa-solid fa-reply"></i><span>Reply</span></button>
                     </div>
-                    
+                    <div id="replySection${i}" class=" hidden bg-sky-100 rounded-md w-full size-fill flex  m-2 gap-2 pl-0">
+                        <div class="bg-sky-500 h-fill rounded-tl-full rounded-bl-full w-1"></div>
+                        <p id="replyText${i}" class="text-wrap text-left text-xs text-gray-500 my-2"></p>
+                    </div>
                 </div>`
         rSection.appendChild(reviewDiv);
     }
@@ -53,21 +56,35 @@ function helpful(event){
 //Modal for replying
 const modal = document.getElementById("myModal");
 const closeBtn = document.getElementById("closeBtn");
-
+const replyBtn = document.getElementById("replyBtn");
+let i;
 function openModal(event){
     console.log("enter modal");
     let temp = event.currentTarget.parentElement.parentElement.parentElement
-    console.log(temp);
-    console.log(temp.getAttribute("id"));
-    
+
     document.getElementById("Rname").innerText=`${w.Review[temp.id].fullName}`
     document.getElementById("Rrating").innerText=`${w.Review[temp.id].rating}`
     document.getElementById("Review").innerText=`${w.Review[temp.id].review}`
     modal.classList.replace("hidden","block");
+    document.getElementById("Rinput").focus()
+    i = temp.id
     
 }
 closeBtn.onclick = function(){
-
+    document.getElementById("Rinput").value="";
     modal.classList.replace("block","hidden")
 }
 
+replyBtn.onclick = function(){
+    let replyValue = document.getElementById("Rinput").value
+    document.getElementById(`replyText${i}`).innerText=replyValue;
+    document.getElementById(`replySection${i}`).classList.replace("hidden","block")
+    document.getElementById("Rinput").value="";
+    modal.classList.replace("block","hidden") 
+}
+document.getElementById("Rinput").addEventListener("keyup",function(event){
+    event.preventDefault();
+    if(event.key == "Enter"){
+        document.getElementById("replyBtn").click()
+    }
+})
