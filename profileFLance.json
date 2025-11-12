@@ -1,0 +1,268 @@
+[
+  {
+    "fullname": "Sarah Lefèvre",
+    "imageProfile": "images/img2.webp",
+    "tarif": "65",
+    "description": "Développeuse front-end passionnée, experte en création d'interfaces web performantes et accessibles.",
+    "speciality": "Développeuse Front-End",
+    "skillsProgramming": 
+    [
+      {
+        "image": "images/html.webp",
+        "name": "html"
+      },
+      {
+        "image": "images/css.webp",
+        "name": "css"
+      },
+      {
+        "image": "images/javascript.webp",
+        "name": "javascript"
+      },
+      {
+        "image": "images/react.webp",
+        "name": "react"
+      }
+    ],
+    "skillsGraphic": [
+      {
+        "image": "images/figma.webp",
+        "name": "figma"
+      },
+       {
+        "image": "images/canva.webp",
+        "name": "canva"
+      },
+       {
+        "image": "images/photoshop.webp",
+        "name": "photoshop"
+      },
+       {
+        "image": "images/illustrator.webp",
+        "name": "illustrator"
+      }
+    ],
+    "project": [
+      {
+        "name1": "Portfolio personnel interactif",
+        "description": "Développement complet avec animations CSS et React"
+      },
+      {
+        "name2": "Application e-commerce",
+        "description": "Intégration front-end et optimisation responsive"
+      }
+    ]
+  },
+  {
+    "fullname": "Lucas Martin",
+    "imageProfile": "images/img3.webp",
+    "tarif": "90",
+    "description": "Développeur full-stack avec expertise en Node.js et bases de données MongoDB.",
+    "speciality": "Développeur Full-Stack",
+    "skillsProgramming": [
+      {
+        "image": "images/javascript.webp",
+        "name": "javascript"
+      },
+       {
+        "image": "images/node.webp",
+        "name": "nodeJS"
+      },
+       {
+        "image":"images/react.webp",
+        "name": "react"
+      },
+       {
+        "image":"images/mongodb.webp",
+        "name": "mongodb"
+      }
+    ],
+    "skillsGraphic": [
+      {
+        "image": "images/figma.webp",
+        "name": "figma"
+      },
+       {
+        "image": "images/canva.webp",
+        "name": "canva"
+      },
+       {
+        "image": "images/photoshop.webp",
+        "name": "photoshop"
+      },
+       {
+        "image": "images/xd.webp",
+        "name": "adobe xd"
+      }
+    ],
+    "project": [
+      {
+        "name1": "Plateforme de gestion de projets",
+        "description": "Développement d'un back-end API REST et intégration front-end"
+      },
+      {
+        "name2": "Dashboard analytique en temps réel",
+        "description": "Utilisation de WebSocket et React"
+      }
+    ]
+  },
+  {
+    "fullname": "Camille Durand",
+    "imageProfile": "images/img4.webp",
+    "tarif": "75",
+    "description": "Graphiste et illustratrice spécialisée dans la création d’identités visuelles fortes.",
+    "speciality": "Graphiste / Illustratrice",
+    "skillsProgramming": [
+      {
+        "image": "images/html.webp", 
+        "name": "html"
+      },
+       {
+        "image": "images/css.webp",
+        "name": "css"
+      },
+       {
+        "image": "images/javascript.webp",
+        "name": "javascript"
+      },
+       {
+        "image": "images/wordpress.webp",
+        "name": "wordpress"
+      }
+    ],
+    "skillsGraphic": [
+      {
+        "image": "images/photoshop.webp", 
+        "name": "photoshop"
+      },
+       {
+        "image": "images/illustrator.webp",
+        "name": "illustrator"
+      },
+       {
+        "image": "images/indesign.webp",
+        "name": "indesign"
+      },
+       {
+        "image": "images/canva.webp",
+        "name": "canva"
+      }
+    ],
+    "project": [
+      {
+        "name": "Branding d'une start-up écologique",
+        "description": "Création du logo, palette de couleurs et supports print"
+      },
+      {
+        "name": "Campagne visuelle pour une marque de vêtements",
+        "description": "Illustrations et affiches publicitaires"
+      }
+    ]
+  },
+  {
+    "fullname": "Nicolas Bernard",
+    "imageProfile": "images/img5.webp",
+    "tarif": "85",
+    "description": "Développeur mobile spécialisé en Flutter et Swift, créant des applications fluides et intuitives.",
+    "speciality": "Développeur Mobile",
+    "skillsProgramming": [
+      {
+        "image": "images/flutter.webp",
+        "name": "flutter"
+      }, {
+        "image": "images/dart.webp",
+        "name": "dart"
+      },
+       {
+        "image": "images/swift.webp",
+        "name": "swift"
+      },
+       {
+        "image": "images/firebase.webp",
+        "name": "firebase"
+      }
+    ],
+    "skillsGraphic": [
+      {
+        "image": ["images/figma.webp", "images/xd.webp", "images/canva.webp", "images/photoshop.webp"],
+        "name": ["figma", "adobe xd", "canva", "photoshop"]
+      },
+       {
+        "image": "images/xd.webp",
+        "name": "adobe xd"
+      },
+       {
+        "image": "images/canva.webp",
+        "name": "canva"
+      },
+       {
+        "image": "images/photoshop.webp",
+        "name": "photoshop"
+      }
+    ],
+    "project": [
+      {
+        "name1": "Application de livraison locale",
+        "description": "Développement cross-platform avec Flutter"
+      },
+      {
+        "name2": "App de suivi santé",
+        "description": "Intégration d’API de capteurs et conception d’interface mobile"
+      }
+    ]
+  },
+  {
+    "fullname": "Emma Laurent",
+    "imageProfile": "images/img6.webp",
+    "tarif": "60",
+    "description": "Rédactrice web SEO, experte en storytelling et en optimisation de contenu pour le référencement.",
+    "speciality": "Rédactrice Web / SEO",
+    "skillsProgramming": [
+      {
+        "image": "images/html.webp", 
+        "name": "html"
+      },
+       {
+        "image": "images/css.webp",
+        "name": "css"
+      },
+       {
+        "image": "images/wordpress.webp",
+        "name": "wordpress"
+      },
+       {
+        "image": "images/google.webp",
+        "name": "seo tools"
+      }
+    ],
+    "skillsGraphic": [
+      {
+        "image": "images/canva.webp", 
+        "name": "canva"
+      },
+       {
+        "image": "images/figma.webp",
+        "name": "figma"
+      },
+       {
+        "image": "images/photoshop.webp",
+        "name": "photoshop"
+      },
+       {
+        "image": "images/illustrator.webp",
+        "name": "illustrator"
+      }
+    ],
+    "project": [
+      {
+        "name1": "Optimisation SEO d’un blog tech",
+        "description": "Amélioration du trafic organique de +120% en 3 mois"
+      },
+      {
+        "name2": "Rédaction de fiches produits e-commerce",
+        "description": "Contenus orientés conversion et SEO"
+      }
+    ]
+  }
+]
+
