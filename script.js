@@ -84,5 +84,4 @@ const contenaire4= document.getElementById("projects");
 }
    
 //     
-//     console.log(users[1].fullname);
-    
+ 
