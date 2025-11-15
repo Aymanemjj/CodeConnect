@@ -29,29 +29,116 @@
         </div>
     </header>
 
-    <section class="">
-        <button><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+    <section class="shadow-sm flex flex-col justify-start gap-10 py-10 ml-5 mr-5">
+        <div class="flex flex-row gap-4 hover:bg-gray-400 text-gray-800 text-sm px-5 py-1.5 w-1/5 rounded">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="size-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
             </svg>
-            Retour aux missions</button>
-        <h1>Postuler à cette mission</h1>
-        <span>Remplissez le formulaire pour soumettre votre candidature</span>
-    </section>
-    <section>
-        <div>
-            <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="size-6">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z" />
-                </svg>
-            </div>
+            <button class="retour">Retour aux missions</button>
+
         </div>
-        <div>
-            <span>SEO Blog Content Writer</span>
-            <span>Digital Marketing Agency</span>
+
+        <h1 class="font-bold text-3xl px-5">Postuler à cette mission</h1>
+
+        <span class="text-gray-600 px-5">Remplissez le formulaire pour soumettre votre candidature</span>
+    </section>
+
+
+    <section class="flex flex-row justify-between justify-center gap-10 mx-30 my-10 shadowh">
+        <div id="mission-details" class="shadow-2xl shadowh flex flex-col justify-center gap-10 w-2/5 bg-gray-100 rounded-2xl">
+            
+        </div>
+
+        <div class="shadow-2xl shadowh flex flex-col gap-10 w-2/3 bg-gray-100 rounded-2xl">
+            <form class="flex flex-col mx-14 my-10 gap-13">
+                <span>Formulaire de candidature</span>
+                <div class="flex flex-col gap-6">
+                    <div class="flex flex-col justify-between gap-3 ">
+                        <div>
+                            <label for="">Nom Complet</label>
+                            <span class="text-red-600 text-xl">*</span>
+                        </div>
+                        <input class="py-3 rounded-b-sm bg-white rounded-lg border border-solid border-gray-800 pl-3"
+                            placeholder="Abdella bahou" type="text" name="" id="">
+                        <span class="text-sm text-red-600"></span>
+                    </div>
+                    <div class="flex flex-col justify-between gap-3 ">
+                        <div>
+                            <label for="">Email</label>
+                            <span class="text-red-600 text-xl">*</span>
+                        </div>
+                        <input class="py-3 rounded-b-sm bg-white rounded-lg border border-solid border-gray-800 pl-3"
+                            placeholder="Abdella.aitbhou@gmail.com" type="email" name="" id="">
+                        <span class="text-sm text-red-600"></span>
+                    </div>
+                    <div class="flex flex-col justify-between gap-3 ">
+                        <div>
+                            <label for="">Telephpne</label>
+                            <span class="text-red-600 text-xl">*</span>
+                        </div>
+                        <input class="py-3 rounded-b-sm bg-white rounded-lg border border-solid border-gray-800 pl-3"
+                            placeholder="+212 63 45 65 43" type="text" name="" id="">
+                        <span class="text-sm text-red-600"></span>
+                    </div>
+                    <div class="flex flex-col justify-between gap-3 ">
+                        <div>
+                            <label for="">Tarif propose (heure/$)</label>
+                            <span class="text-red-600 text-xl">*</span>
+                        </div>
+                        <input class="py-3 rounded-b-sm bg-white rounded-lg border border-solid border-gray-800 pl-3"
+                            placeholder="50" type="number" name="" id="">
+                        <span class="text-sm text-red-600"></span>
+                    </div>
+                    <div class="flex flex-col justify-between gap-3 ">
+                        <div>
+                            <label for="">Disponibilite</label>
+                            <span class="text-red-600 text-xl">*</span>
+                        </div>
+                        <select class="py-3 rounded-b-sm bg-white rounded-lg border border-solid border-gray-800 pl-3"
+                            name="" id="">
+                            <option value="">Immédiatement</option>
+                            <option value="">Dans 1 semaine</option>
+                            <option value="">Dans 2 semaine</option>
+                            <option value="">Dans 1 mois</option>
+                        </select>
+                        <span class="text-sm text-red-600"></span>
+                    </div>
+                    <div class="flex flex-col justify-between gap-3 ">
+                        <div>
+                            <label for="">Portfolio URL</label>
+                            <span class="text-gray-600 text-base">(optionnel)</span>
+                        </div>
+                        <input class="py-3  rounded-b-sm bg-white rounded-lg border border-solid border-gray-800 pl-3"
+                            placeholder="https://mon-portfolio.com" type="text" name="" id="">
+                        <span class="text-sm text-red-600"></span>
+                    </div>
+                    <div class="flex flex-col justify-between gap-3 ">
+                        <div>
+                            <label for="">Lettre de motivation</label>
+                            <span class="text-red-600 text-xl">*</span>
+                        </div>
+                        <input class="py-5  rounded-b-sm bg-white rounded-lg border border-solid border-gray-800 pl-3"
+                            placeholder="Expliquez pourquoi vous êtes le candidat idéal pour cette mission..."
+                            type="text" name="" id="">
+                        <span class="text-sm text-red-600"></span>
+                    </div>
+                    <div class="flex flex-row justify-between">
+                        <button class="retour w-2/5 py-3 bg-white border rounded hover:shadow-2xl">Annuler</button>
+                        <button onclick="formValidation()" class="w-2/5 py-3 bg-blue-600 text-white rounded hover:bg-blue-500">Envoyer la
+                            candidature</button>
+                    </div>
+
+
+                </div>
+
+            </form>
+
         </div>
     </section>
+
+
+
 
 
 
