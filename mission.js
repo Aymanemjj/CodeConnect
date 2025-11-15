@@ -205,7 +205,7 @@ function detailTools(missionD) {
             </div>`;
 }
 
-function detailPrix(missionD){
+function detailPrix(missionD) {
     return `<div class="flex flex-row gap-10 mx-14">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="size-6">
@@ -219,7 +219,7 @@ function detailPrix(missionD){
             </div>`;
 }
 
-function detailDure(missionD){
+function detailDure(missionD) {
     return `<div class="flex flex-row mx-14 gap-10">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="size-6">
@@ -234,7 +234,7 @@ function detailDure(missionD){
             </div>`;
 }
 
-function detailContrat(missionD){
+function detailContrat(missionD) {
     return `<div class="flex flex-row mx-14 gap-10">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="size-6">
@@ -248,7 +248,7 @@ function detailContrat(missionD){
                     </div>
             </div>`;
 }
-function detailCategorie(missionD){
+function detailCategorie(missionD) {
     return `<div class="flex flex-row mx-14 gap-10">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="size-6">
@@ -264,7 +264,7 @@ function detailCategorie(missionD){
 }
 
 
-function formValidation(){
+function formValidation() {
 
 }
 
