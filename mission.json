@@ -1,6 +1,7 @@
 {
     "missionTable": [
         {
+            "client": "Abdellah Ait Bhou",
             "missionName": "E-commerce Website Development",
             "missionNiveau": "Expert",
             "siteName": "TechShop Inc.",
@@ -12,17 +13,13 @@
                 "Stripe",
                 "Tailwind CSS"
             ],
-            "missionPrix": [
-                5000,
-                10000
-            ],
-            "missionDure": [
-                2,
-                3
-            ],
-            "missionContrat": "contrat à distance"
+            "missionPrix": [5000, 10000],
+            "missionDure": [2, 3],
+            "missionContrat": "contrat à distance",
+            "category": "Web development"
         },
         {
+            "client": "Karim Ademy",
             "missionName": "Brand Identity Design Package",
             "missionNiveau": "Intermediate",
             "siteName": "GreenLeaf Organics",
@@ -33,17 +30,13 @@
                 "Logo Design",
                 "Print Design"
             ],
-            "missionPrix": [
-                2000,
-                4000
-            ],
-            "missionDure": [
-                1,
-                5
-            ],
-            "missionContrat": "contrat au site"
+            "missionPrix": [2000, 4000],
+            "missionDure": [1, 5],
+            "missionContrat": "contrat au site",
+            "category": "Graphic design"
         },
         {
+            "client": "Nourdine Amrabet",
             "missionName": "Mobile App Development - Fitness Tracking",
             "missionNiveau": "Expert",
             "siteName": "FitLife Technologies",
@@ -54,15 +47,112 @@
                 "Health APIs",
                 "UI/UX"
             ],
-            "missionPrix": [
-                15000,
-                25000
+            "missionPrix": [15000, 25000],
+            "missionDure": [4, 5],
+            "missionContrat": "contrat au site",
+            "category": "Mobile development"
+        },
+        {
+            "client": "Salma Idrissi",
+            "missionName": "Corporate Website Redesign",
+            "missionNiveau": "Advanced",
+            "siteName": "NovaTech Solutions",
+            "missionDescription": "Redesign our existing corporate website to improve user experience, accessibility, and SEO performance using modern frameworks.",
+            "missionTools": [
+                "Next.js",
+                "Tailwind CSS",
+                "SEO",
+                "Figma"
             ],
-            "missionDure": [
-                4,
-                6
+            "missionPrix": [3000, 7000],
+            "missionDure": [2, 4],
+            "missionContrat": "contrat à distance",
+            "category": "Web development"
+        },
+        {
+            "client": "Mouna El Fahmi",
+            "missionName": "Social Media Marketing Strategy",
+            "missionNiveau": "Intermediate",
+            "siteName": "EcoTrend Store",
+            "missionDescription": "Develop and manage a 3-month digital marketing campaign including content planning, ads creation, and social media analytics.",
+            "missionTools": [
+                "Canva",
+                "Meta Ads",
+                "Google Analytics",
+                "Social Media Strategy"
             ],
-            "missionContrat": "contrat au site"
+            "missionPrix": [1000, 2500],
+            "missionDure": [1, 3],
+            "missionContrat": "contrat à distance",
+            "category": "Marketing"
+        },
+        {
+            "client": "Yassine El Hanafi",
+            "missionName": "Blog Article Series - Tech Innovations",
+            "missionNiveau": "Beginner",
+            "siteName": "TechVoice Media",
+            "missionDescription": "Write a series of 10 engaging blog posts about emerging tech trends, AI advancements, and startups shaping the future.",
+            "missionTools": [
+                "SEO Writing",
+                "WordPress",
+                "Grammarly",
+                "ChatGPT"
+            ],
+            "missionPrix": [500, 1500],
+            "missionDure": [1, 2],
+            "missionContrat": "contrat à distance",
+            "category": "Content writing"
+        },
+        {
+            "client": "Imane Talbi",
+            "missionName": "Mobile App UI Design for Food Delivery",
+            "missionNiveau": "Expert",
+            "siteName": "QuickBite",
+            "missionDescription": "Create an intuitive and visually appealing mobile UI for a food delivery app focusing on usability and conversion optimization.",
+            "missionTools": [
+                "Figma",
+                "Adobe XD",
+                "Prototyping",
+                "User Testing"
+            ],
+            "missionPrix": [3000, 8000],
+            "missionDure": [2, 3],
+            "missionContrat": "contrat à distance",
+            "category": "UI/UX design"
+        },
+        {
+            "client": "Omar Essadik",
+            "missionName": "Logo & Packaging Design for Coffee Brand",
+            "missionNiveau": "Intermediate",
+            "siteName": "Arabica Vibes",
+            "missionDescription": "Design a modern logo and eco-friendly packaging for a premium coffee brand targeting young professionals.",
+            "missionTools": [
+                "Illustrator",
+                "Photoshop",
+                "Branding",
+                "Packaging Design"
+            ],
+            "missionPrix": [1500, 3500],
+            "missionDure": [1, 2],
+            "missionContrat": "contrat au site",
+            "category": "Graphic design"
+        },
+        {
+            "client": "Sara Kabbaj",
+            "missionName": "Landing Page Optimization",
+            "missionNiveau": "Advanced",
+            "siteName": "SmartAds Agency",
+            "missionDescription": "Optimize landing page design and content to increase lead conversion rate. Includes A/B testing and performance tracking.",
+            "missionTools": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Google Optimize"
+            ],
+            "missionPrix": [1200, 3000],
+            "missionDure": [1, 2],
+            "missionContrat": "contrat à distance",
+            "category": "Marketing"
         }
     ]
 }
