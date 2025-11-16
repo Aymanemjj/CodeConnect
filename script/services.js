@@ -69,7 +69,7 @@ filterCategorie.addEventListener('change', function(){
 // JSON
 async function listServices() {
   try {
-    let response = await fetch('services.json');
+    let response = await fetch('json/services.json');
     let data = await response.json();
     services = data.services;
     afficherServices(services);

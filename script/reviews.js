@@ -7,7 +7,7 @@ async function getReviews(file) {
     console.log(w.Review[0].fullName)
     reviewsDisplay(rSection, w)
 }
-getReviews("reviews.json")
+getReviews("json/reviews.json")
 
 //Reviews displayer
 function reviewsDisplay(rSection, w){

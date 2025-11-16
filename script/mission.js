@@ -1,6 +1,6 @@
 async function missionList() {
 
-    const response = await fetch('mission.json');
+    const response = await fetch('json/mission.json');
     const missionsJson = await response.json();
 
     const missions = missionsJson.missionTable;
@@ -50,73 +50,6 @@ function validationformil(e) {
     const budget = document.getElementById("budget-ajt");
 
 
-<<<<<<< HEAD
-    if (budget.value == '') {
-
-        budget.style.borderColor = "red";
-        return;
-    } else {
-
-        budget.style.borderColor = "green";
-        
-
-    };
-    const fulname = /^[a-zA-Z]{1,30}$/;
-    if (titre == '') {
-
-        document.getElementById("titre-mission-ajt").style.borderColor = "red";
-        return;
-    } else {
-        if (!fulname.test(titre)) {
-            document.getElementById("titre-mission-ajt").style.borderColor = "red";
-
-            return;
-        } else {
-            document.getElementById("titre-mission-ajt").style.borderColor = "green";
-
-        }
-    };
-    if (clientenreprs == "") {
-        document.getElementById("client-entreprise-ajt").style.borderColor = "red";
-        return;
-    } else {
-        if (!fulname.test(clientenreprs)) {
-            document.getElementById("client-entreprise-ajt").style.borderColor = "red";
-
-            return;
-        }
-        else {
-            document.getElementById("client-entreprise-ajt").style.borderColor = "green";
-
-        }
-    };
-    if (description == "") {
-        document.getElementById("description-ajt").style.borderColor = "red";
-        return;
-    } else {
-        document.getElementById("description-ajt").style.borderColor = "green";
-
-    };
-    if (duree == "") {
-        document.getElementById("titre-mission-ajt").style.borderColor = "red";
-        return;
-    } else {
-        if (duree < 15 || duree > 100) {
-            document.getElementById("duree-ajt").style.borderColor = "red";
-
-            return;
-        } else {
-            document.getElementById("duree-ajt").style.borderColor = "green";
-
-        }
-    };
-    setitemsdanslocalstorege();
-
-}
-function setitemsdanslocalstorege() {
-
-}
-=======
 
 
 function missionCard(mission) {
@@ -359,5 +292,4 @@ function formValidation() {
 
 }
 
-
->>>>>>> 6d37a9744cf1845f62262044220380a79b236cf9
+}

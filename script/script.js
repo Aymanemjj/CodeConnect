@@ -8,7 +8,7 @@ section3.style.display="none";
 let users=[];
 let ix;
 async function getText() {
-  let donne = "profileFLance.json";
+  let donne = "json/profileFLance.json";
   let x = await fetch(donne);
   let user = await x.json();
   users=[...user];
